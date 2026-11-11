@@ -231,3 +231,6 @@ svg{width:100%;height:100%;fill:none;stroke:currentColor;stroke-width:1.55;strok
 .hero-cover-copy{left:0;bottom:0;width:52%;height:54%;opacity:.98}
 .hero-cover-card{right:0;top:18%;width:27%;height:53%;opacity:.98}
 @media (max-width:680px){.hero-cover-copy{left:0;bottom:0;width:68%;height:63%;opacity:.99}.hero-cover-card{right:0;top:22%;width:42%;height:49%;opacity:.99}}
+
+.hero-cover-card{top:16%;height:67%}
+@media (max-width:680px){.hero-cover-card{top:17%;height:67%}}

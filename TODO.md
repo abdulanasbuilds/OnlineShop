@@ -1,15 +1,18 @@
 # TODO
 
-- [ ] Faithful standalone recreation of every user-facing page and section present on the reference site.
-  - The site must mirror the referenced HiFi Store page rather than become a new interpretation.
-  - The implementation must not use an iframe.
-  - The implementation must not include external links, Framer branding, or Framer attribution elements.
+- [x] Convert the site into a multi-page showcase rather than an online store.
+  - Home, Selected Work, About, Blog, Article, and Contact views are available through internal routes.
+  - Commerce language, cart/favourite/profile behavior, buying actions, store labels, and online-store framing were removed.
 
-- [ ] Reference-matched presentation.
-  - Preserve the reference typography, colors, imagery, spacing, borders, hierarchy, page copy, and content organization.
-  - Recreate the product presentation and shopping-oriented interface shown on the reference site.
+- [x] Apply the requested personal branding.
+  - The visible name/brand is “Coded by Abdul Anas”.
+  - The footer includes “Built by Abdul Anas” and “Coded by Abdul Anas”.
+  - The footer and Contact page include WhatsApp contact 0597896078.
 
-- [ ] Responsive and interactive behavior.
-  - Match the reference behavior across desktop, tablet, and mobile breakpoints.
-  - Recreate navigation, buttons, hover states, transitions, animations, and other visible interactions.
-  - Use local/internal routes in place of external links.
+- [x] Preserve a polished responsive presentation.
+  - The site keeps the supplied visual direction, local imagery, local fonts, responsive layouts, internal navigation, project rails, article cards, and mobile menu.
+  - The site is self-contained at runtime except for the explicitly requested WhatsApp contact action.
+
+- [x] Push the project to the requested GitHub repository.
+  - Remote: https://github.com/abdulanasbuilds/OnlineShop.git
+  - Branch: main

@@ -11,7 +11,7 @@ const projects = [
   ['SmartView 43" LED', 'JWfWfrsHFROUL87ZZe1mprm6HwQ', 'QqWV6ADi1AXbfxedp3mfVsdRTTU', 'Launch campaign'],
   ['SlimBar 2.1', 'd7v2wJOhK6jLrIZyHTzIfiXoo5E', 'YfhnQlJGIfywhuD2n02EJEM3m4M', 'Responsive web design'],
   ['ProAudio XLR Cable Set', 'vHWU9VbXj2974v6OcbDn9u2z4', 'bVfGbtheZHHKOqhQZliipoFMs', 'Art direction'],
-  ['HomeSound Bar Pro', '1IgJIMcdBnJjzHCsefo1mjjnZjM', 'VXOUZiKn8Z3U6BIHS4ZT10iwWs', 'Digital storefront concept'],
+  ['HomeSound Bar Pro', '1IgJIMcdBnJjzHCsefo1mjjnZjM', 'VXOUZiKn8Z3U6BIHS4ZT10iwWs', 'Digital platform concept'],
   ['DALI CONNECT Stand M-601', 'McOVQ6BgmR085U865ppkcComJos', 'zkcWHcVaEJgLUlPwSnlqG3FJQI', 'Editorial system'],
   ['BeatRunner Sport', 'M6eLWg07ufGoE9HVlS3Sh8y6wBQ', 'J0eatWj6Tl28zB2caQem2Et5s', 'Campaign visuals'],
 ];
