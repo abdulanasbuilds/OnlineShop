@@ -2,28 +2,18 @@ import './style.css';
 
 const jpgAssets = new Set(['vRV0SewxhVXANq9cpM5NmXPfMw', '1BsatJIb1Ivwhy7t1MO2GCK8fU', 'n9JVaN8wvTBRqoH40RycXvJSvRk', '6kXIlbPlvRIEf1KpAg5jqY0yC8o']);
 const A = (name) => `/assets/${name}${jpgAssets.has(name) ? '.jpg.png' : '.png.png'}`;
+const whatsappHref = 'https://wa.me/966597896078';
 const heroImage = '/assets/aagAQW4I6LzfnzIXSpVuhlRbDWw.jpg.png';
 
-const bestSellers = [
-  ['VisionMax 65" 4K OLED', 'Nk7j04TyuwZCKOQ4pmtcrpjmy2E', 'tVUfEhL2zsjwPINWqdjSmThvjc', 'visionmax-65-4k-oled'],
-  ['SonicWave Pro X1', 'fM0M8AElFObabg4uUoHWVZtdE', 'hOWFvnnznYVCJgum9F3CXntzcQk', 'urbanbeats-street-style'],
-  ['SmartView 43" LED', 'JWfWfrsHFROUL87ZZe1mprm6HwQ', 'QqWV6ADi1AXbfxedp3mfVsdRTTU', 'smartview-43-led'],
-  ['SlimBar 2.1', 'd7v2wJOhK6jLrIZyHTzIfiXoo5E', 'YfhnQlJGIfywhuD2n02EJEM3m4M', 'slimbar-2-1'],
-  ['ProAudio XLR Cable Set', 'vHWU9VbXj2974v6OcbDn9u2z4', 'bVfGbtheZHHKOqhQZliipoFMs', 'proaudio-xlr-cable-set'],
-  ['HomeSound Bar Pro', '1IgJIMcdBnJjzHCsefo1mjjnZjM', 'VXOUZiKn8Z3U6BIHS4ZT10iwWs', 'partymax-speaker'],
-  ['DALI CONNECT Stand M-601', 'McOVQ6BgmR085U865ppkcComJos', 'zkcWHcVaEJgLUlPwSnlqG3FJQI', 'dali-connect-stand-m-601'],
-  ['BeatRunner Sport', 'M6eLWg07ufGoE9HVlS3Sh8y6wBQ', 'J0eatWj6Tl28zB2caQem2Et5s', 'beatrunner-sport'],
-];
-
-const newArrivals = [
-  ['ThunderBass 360', 'olaagQi7gLmFzUf73zmPdCdDVE', 'FnhAIDI7A7Wuaauc01TzXYqk', 'sonicboom-floorstanding-towers'],
-  ['StudioAmp Compact', 'ukZwX8TsC7cXYuf9FfpTLzuXCiU', 'WBCHE2gplhdd0ZxBjCQ9lef8k', 'studioamp-compact'],
-  ['SlimBar 2.1', 'd7v2wJOhK6jLrIZyHTzIfiXoo5E', 'YfhnQlJGIfywhuD2n02EJEM3m4M', 'slimbar-2-1'],
-  ['PowerStage Pro 500', 'rFto3Hj1eSiT7uVr6rPge7NLocw', 'Qap4SARwdlWnpDJJawVU49hmTM', 'powerstage-pro-500'],
-  ['PortaBlast Mini', 't0P7G55MehpHyW73Xl3oE5hGeyk', 'fDRWhvooWvsVIH2AqlHdHoVblD4', 'clearwave-bookshelf-masters'],
-  ['Essentials WB Sonos Era 100', 'ml52CEBDJTt0fdbfTsVctDBrs', '9NZ5kAhJ0XS9vm5HNlnk51GHptg', 'essentials-wb-sonos-era-100'],
-  ['EssentialConnect Audio Bundle', 'r8IgzXH7s24kaomRjWFL1u5tH0', 'zDaCHa4KXN7sCHBu5CPGFEMRZU', 'essentialconnect-audio-bundle'],
-  ['CinemaView 55" QLED', 'utquBj3oLpvjmHGKqLdBa9aMT64', 'Eng91eYz32grQkFqO0TFYJ2PC4Q', 'cinemaview-55-qled'],
+const projects = [
+  ['VisionMax 65" 4K OLED', 'Nk7j04TyuwZCKOQ4pmtcrpjmy2E', 'tVUfEhL2zsjwPINWqdjSmThvjc', 'Product showcase'],
+  ['SonicWave Pro X1', 'fM0M8AElFObabg4uUoHWVZtdE', 'hOWFvnnznYVCJgum9F3CXntzcQk', 'Brand experience'],
+  ['SmartView 43" LED', 'JWfWfrsHFROUL87ZZe1mprm6HwQ', 'QqWV6ADi1AXbfxedp3mfVsdRTTU', 'Launch campaign'],
+  ['SlimBar 2.1', 'd7v2wJOhK6jLrIZyHTzIfiXoo5E', 'YfhnQlJGIfywhuD2n02EJEM3m4M', 'Responsive web design'],
+  ['ProAudio XLR Cable Set', 'vHWU9VbXj2974v6OcbDn9u2z4', 'bVfGbtheZHHKOqhQZliipoFMs', 'Art direction'],
+  ['HomeSound Bar Pro', '1IgJIMcdBnJjzHCsefo1mjjnZjM', 'VXOUZiKn8Z3U6BIHS4ZT10iwWs', 'Digital storefront concept'],
+  ['DALI CONNECT Stand M-601', 'McOVQ6BgmR085U865ppkcComJos', 'zkcWHcVaEJgLUlPwSnlqG3FJQI', 'Editorial system'],
+  ['BeatRunner Sport', 'M6eLWg07ufGoE9HVlS3Sh8y6wBQ', 'J0eatWj6Tl28zB2caQem2Et5s', 'Campaign visuals'],
 ];
 
 const categories = [
@@ -33,7 +23,7 @@ const categories = [
   ['TV', '6hgRFYKyAFrl2JQORl8FC5wtIck', 'tv', 'tv'],
   ['Soundbar', 'aRndvpfrsoJHPvDEjVJvqLAJTCA', 'soundbar', 'sound bar'],
   ['Cable', 'Vb40cD36eWol35Z85OBSdTK6A', 'cable', 'cable'],
-  ['Accessories', 'x4hVvrHNugxJuLgrJLWCa0t6O60', 'accessories', 'sound accesory'],
+  ['Accessories', 'x4hVvrHNugxJuLgrJLWCa0t6O60', 'accessories', 'sound accessory'],
 ];
 
 const articles = [
@@ -44,172 +34,47 @@ const articles = [
 ];
 
 const icons = {
-  search: '<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.8"></circle><path d="m16 16 5 5"></path></svg>',
-  heart: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.8 8.9c0 5.2-8.8 10-8.8 10s-8.8-4.8-8.8-10A4.7 4.7 0 0 1 12 6.1a4.7 4.7 0 0 1 8.8 2.8Z"></path></svg>',
-  bag: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8h14l1 13H4L5 8Z"></path><path d="M8 8a4 4 0 0 1 8 0"></path></svg>',
-  user: '<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="3.7"></circle><path d="M4.5 21a7.5 7.5 0 0 1 15 0"></path></svg>',
   arrow: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14"></path><path d="m13 6 6 6-6 6"></path></svg>',
   play: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 6 9 6-9 6V6Z"></path></svg>',
   headset: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 14v-2a8 8 0 0 1 16 0v2"></path><path d="M4 14h3v6H5a1 1 0 0 1-1-1v-5Zm16 0h-3v6h2a1 1 0 0 0 1-1v-5Z"></path></svg>',
-  truck: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h11v10H3z"></path><path d="M14 10h4l3 3v3h-7z"></path><circle cx="7" cy="18" r="1.7"></circle><circle cx="18" cy="18" r="1.7"></circle></svg>',
-  shield: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 20 6v5c0 5-3.4 8.2-8 10-4.6-1.8-8-5-8-10V6l8-3Z"></path><path d="m8.5 12 2.3 2.3 4.8-5"></path></svg>',
   spark: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 2 1.5 7.5L21 12l-7.5 1.5L12 21l-1.5-7.5L3 12l7.5-2.5L12 2Z"></path></svg>',
+  layers: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 3 8 4-8 4-8-4 8-4Z"></path><path d="m4 12 8 4 8-4"></path><path d="m4 17 8 4 8-4"></path></svg>',
+  menu: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"></path></svg>',
 };
 
-const nav = [
-  ['Shop', '/all'], ['About', '/about-us'], ['Blog', '/blog'], ['Contact us', '/contact-us'],
-];
+const nav = [['Work', '/all'], ['About', '/about-us'], ['Blog', '/blog'], ['Contact us', '/contact-us']];
 
-function routeLink(href, label, className = '') {
-  return `<a class="${className}" href="${href}" data-route>${label}</a>`;
-}
-
-function logo() {
-  return `<a class="logo" href="/" data-route><img src="/assets/BO3LiXEb9QwaAASBvLd23IYmNaY.png.png" alt="" /><span>HiFiShop</span></a>`;
-}
-
-function iconButton(kind, label, extra = '') {
-  return `<button class="icon-button ${extra}" type="button" aria-label="${label}" data-action="${kind}">${icons[kind]}</button>`;
-}
-
-function mobileHeader() {
-  return `<header class="mobile-header">
-    <button class="menu-button" type="button" aria-label="Open menu" data-action="menu"><span></span><span></span></button>
-    ${logo()}
-    <div class="mobile-actions">${iconButton('search', 'Search')}${iconButton('bag', 'Shopping bag')}</div>
-    <nav class="menu-panel">${nav.map(([label, href]) => routeLink(href, label, 'menu-link')).join('')}</nav>
-  </header>`;
-}
-
-function desktopHotspots() {
-  return `<div class="hero-hotspots" aria-label="Main navigation">
-    <div class="hotspot-nav">${nav.map(([label, href]) => routeLink(href, label, 'hotspot-link')).join('')}</div>
-    <a class="hotspot-logo" href="/" data-route aria-label="HiFiShop home"></a>
-    <div class="hotspot-actions">
-      ${iconButton('search', 'Search')}${iconButton('heart', 'Favourite')}${iconButton('bag', 'Shopping bag')}${iconButton('user', 'Profile')}
-    </div>
-    <a class="hotspot-buy" href="/products/bassmaster-gaming-elite" data-route aria-label="Buy BassMaster Gaming Elite"></a>
-  </div>`;
-}
+function routeLink(href, label, className = '') { return `<a class="${className}" href="${href}" data-route>${label}</a>`; }
+function logo() { return `<a class="logo" href="/" data-route><img src="/assets/BO3LiXEb9QwaAASBvLd23IYmNaY.png.png" alt="" /><span>Coded by Abdul Anas</span></a>`; }
+function mobileHeader() { return `<header class="mobile-header"><button class="menu-button" type="button" aria-label="Open menu" data-action="menu">${icons.menu}</button>${logo()}<a class="mobile-whatsapp" href="${whatsappHref}" target="_blank" rel="noreferrer" aria-label="Chat on WhatsApp">WA</a><nav class="menu-panel">${nav.map(([label, href]) => routeLink(href, label, 'menu-link')).join('')}</nav></header>`; }
+function header() { return `<header class="site-header"><div class="header-links">${nav.map(([label, href]) => routeLink(href, label, 'header-link')).join('')}</div>${logo()}<div class="header-contact"><span>Available for selected projects</span><a href="${whatsappHref}" target="_blank" rel="noreferrer">WhatsApp</a></div></header>${mobileHeader()}`; }
+function button(href, text, className = '') { return `<a class="${className} pill-button" href="${href}" data-route>${text}<span>${icons.arrow}</span></a>`; }
 
 function hero() {
-  return `<section class="hero-section" aria-label="BassMaster Gaming Elite">
-    <div class="hero-art"><img src="${heroImage}" alt="BassMaster Gaming Elite gaming headphones" />${desktopHotspots()}</div>
-    ${mobileHeader()}
-  </section>`;
+  return `<section class="hero-section"><div class="hero-art"><img src="${heroImage}" alt="Headphones and audio visual direction" /><div class="hero-cover-top"></div><div class="hero-cover-copy"></div><div class="hero-cover-card"></div><div class="hero-overlay-nav">${header()}</div><div class="hero-copy"><p class="eyebrow">Independent digital designer</p><h1>Coded by<br />Abdul Anas</h1><p>Thoughtful websites, visual systems, and digital experiences for brands that want to be remembered.</p>${button('/all', 'View selected work', 'dark-button')}</div><div class="hero-side-card"><p>Designing with clarity, rhythm, and character.</p>${button('/about-us', 'About the work', 'light-button')}</div></div></section>`;
 }
 
-function productCard([name, image, hover, slug]) {
-  return `<article class="product-card">
-    <a href="/products/${slug}" data-route class="product-image-wrap" aria-label="View ${name}">
-      <img class="product-image primary" src="${A(image)}" alt="${name}" />
-      <img class="product-image secondary" src="${A(hover)}" alt="" aria-hidden="true" />
-      <span class="product-arrow">${icons.arrow}</span>
-    </a>
-    <a href="/products/${slug}" data-route class="product-name">${name}</a>
-  </article>`;
-}
+function projectCard([name, image, hover, type]) { return `<article class="project-card"><a href="/all" data-route class="project-image-wrap"><img class="project-image primary" src="${A(image)}" alt="${name}" /><img class="project-image secondary" src="${A(hover)}" alt="" aria-hidden="true" /><span class="project-arrow">${icons.arrow}</span></a><a href="/all" data-route class="project-name">${name}</a><span class="project-type">${type}</span></article>`; }
+function projectRail(title, items = projects, className = '') { return `<section class="section project-section ${className}"><div class="section-heading-row"><h2>${title}</h2><div class="rail-controls"><button class="icon-button" type="button" data-action="prev" aria-label="Previous">${icons.arrow}</button><button class="icon-button next" type="button" data-action="next" aria-label="Next">${icons.arrow}</button></div></div><div class="project-rail">${items.map(projectCard).join('')}</div></section>`; }
+function categoriesSection() { return `<section class="section categories-section"><div class="section-heading-row"><h2>AREAS OF PRACTICE</h2></div><div class="category-rail">${categories.map(([label, image, slug, alt]) => `<a class="category-card" href="/all?category=${slug}" data-route><span class="category-image"><img src="${A(image)}" alt="${alt}" /></span><span>${label}</span></a>`).join('')}</div></section>`; }
+function benefits() { const items = [['headset', 'Human-first thinking', 'Every page starts with a clear purpose and a real audience.'], ['spark', 'Distinctive visuals', 'Strong art direction gives useful ideas a memorable point of view.'], ['layers', 'Built to scale', 'Flexible systems make it easier to grow without losing the original feeling.'], ['play', 'Careful details', 'Motion, type, spacing, and interaction are shaped as one experience.']]; return `<section class="benefits section">${items.map(([kind, title, copy]) => `<div class="benefit"><div class="benefit-icon">${icons[kind]}</div><div><h3>${title}</h3><p>${copy}</p></div></div>`).join('')}</section>`; }
+function featureStrip() { return `<section class="feature-strip section"><div class="feature-item"><div class="feature-icon">${icons.headset}</div><p>Brand identity that feels natural in every screen.</p></div><div class="feature-item"><div class="feature-icon">${icons.spark}</div><p>Interfaces with just enough surprise to stay human.</p></div><div class="feature-item"><div class="feature-icon">${icons.play}</div><p>Simple paths, strong hierarchy, and useful motion.</p></div><div class="feature-item"><div class="feature-icon">${icons.layers}</div><p>Design systems made for real-world publishing.</p></div></section>`; }
+function promo() { return `<section class="promo section"><div class="promo-copy"><p class="eyebrow">A better digital presence</p><h2>Make it<br />feel like you.</h2><p class="promo-text">A focused partner for brands that care about how their work sounds, looks, and moves.</p>${button('/contact-us', 'Start a conversation', 'light-button')}</div><div class="promo-art"><div class="promo-circle"></div><img src="${A('M6eLWg07ufGoE9HVlS3Sh8y6wBQ')}" alt="Colorful creative direction" /></div></section>`; }
+function reviews() { const people = [['Mark Johnson', 'Abdul turned a complicated idea into a clear, confident digital experience.', 'vRV0SewxhVXANq9cpM5NmXPfMw'], ['Emily Davis', 'The work felt thoughtful from the first conversation and polished all the way through launch.', '1BsatJIb1Ivwhy7t1MO2GCK8fU']]; return `<section class="section reviews"><div class="section-heading-row"><h2>CLIENT NOTES</h2></div><div class="review-grid">${people.map(([name, copy, image]) => `<article class="review-card"><img src="${A(image)}" alt="${name}" /><div class="review-copy"><div class="stars">★★★★★</div><h3>${name}</h3><p>${copy}</p></div></article>`).join('')}</div></section>`; }
+function news() { return `<section class="section news"><div class="section-heading-row"><h2>NOTES &amp; ARTICLES</h2><a class="view-all" href="/blog" data-route>Read the journal <span>${icons.arrow}</span></a></div><div class="news-grid">${articles.map(([tag, date, title, image, slug]) => `<a class="news-card" href="/blog/${slug}" data-route><img src="${A(image)}" alt="${title}" /><div class="news-meta"><span>${tag}</span><span>${date}</span></div><h3>${title}</h3><span class="news-arrow">${icons.arrow}</span></a>`).join('')}</div></section>`; }
+function footer() { return `<footer class="footer"><div class="footer-top"><div class="newsletter"><h2>Have a project in mind? Let’s make something clear and memorable.</h2><div class="footer-cta">${button('/contact-us', 'Get in touch', 'light-button')}<a class="whatsapp-link" href="${whatsappHref}" target="_blank" rel="noreferrer">WhatsApp: 0597896078</a></div></div><div class="footer-mark">${logo()}<p>Independent digital design and development by Abdul Anas.</p></div></div><div class="footer-links"><div><p class="footer-label">Pages</p>${routeLink('/all', 'Work')} ${routeLink('/about-us', 'About')} ${routeLink('/blog', 'Blog')}</div><div><p class="footer-label">Contact</p><a href="${whatsappHref}" target="_blank" rel="noreferrer">WhatsApp</a><span class="footer-phone">0597896078</span>${routeLink('/contact-us', 'Contact us')}</div><div><p class="footer-label">Credits</p><span class="footer-credit">Built by Abdul Anas</span><span class="footer-credit">Coded by Abdul Anas</span></div></div><div class="footer-bottom"><span>© 2026 Coded by Abdul Anas</span><span>Built by Abdul Anas</span></div></footer>`; }
 
-function productRail(title, products, className = '') {
-  return `<section class="section product-section ${className}">
-    <div class="section-heading-row"><h2>${title}</h2><div class="rail-controls">${iconButton('prev', 'Previous')} ${iconButton('next', 'Next')}</div></div>
-    <div class="product-rail">${products.map(productCard).join('')}</div>
-  </section>`;
-}
+function homePage() { return `<div class="site-shell">${hero()}<main>${projectRail('SELECTED WORK')}${benefits()}${featureStrip()}${categoriesSection()}${projectRail('MORE PROJECTS', projects.slice(4), 'new-arrivals')}${promo()}${reviews()}${news()}</main>${footer()}<div class="toast" role="status" aria-live="polite"></div></div>`; }
+function pageIntro(kicker, title, copy) { return `<section class="page-intro section"><p class="eyebrow">${kicker}</p><h1>${title}</h1><p>${copy}</p></section>`; }
+function workPage() { return `<div class="site-shell inner-page">${header()}<main>${pageIntro('Selected work', 'Digital experiences with a point of view.', 'A collection of visual systems, web experiences, and campaign directions shaped for clarity and character.') }<section class="section work-grid">${projects.map(projectCard).join('')}</section>${categoriesSection()}</main>${footer()}<div class="toast"></div></div>`; }
+function aboutPage() { return `<div class="site-shell inner-page">${header()}<main>${pageIntro('About Abdul Anas', 'Good design should feel obvious after you see it.', 'I build identities and websites that help ambitious people explain what they do, why it matters, and why it should be remembered.') }<section class="section about-grid"><div class="about-statement"><h2>Design, code, and a little bit of obsession.</h2><p>From the first rough idea to the last responsive detail, I keep strategy and execution close together. The result is work that looks distinctive, reads clearly, and stays useful after launch.</p>${button('/contact-us', 'Work with Abdul', 'dark-button')}</div><div class="about-list"><div><span>01</span><h3>Listen first</h3><p>Understand the audience, the ambition, and the tension worth resolving.</p></div><div><span>02</span><h3>Make it tangible</h3><p>Turn the direction into a visual language people can feel immediately.</p></div><div><span>03</span><h3>Build the details</h3><p>Craft the responsive system so the idea survives every screen size.</p></div></div></section>${reviews()}</main>${footer()}<div class="toast"></div></div>`; }
+function blogPage() { return `<div class="site-shell inner-page">${header()}<main>${pageIntro('The journal', 'Notes on design, sound, and making things clear.', 'Short observations and practical ideas from the studio.') }<section class="section blog-grid">${articles.map(([tag,date,title,image,slug]) => `<a class="news-card" href="/blog/${slug}" data-route><img src="${A(image)}" alt="${title}" /><div class="news-meta"><span>${tag}</span><span>${date}</span></div><h3>${title}</h3><span class="news-arrow">${icons.arrow}</span></a>`).join('')}</section></main>${footer()}<div class="toast"></div></div>`; }
+function articlePage(slug) { const article = articles.find((item) => item[4] === slug) || articles[0]; return `<div class="site-shell inner-page">${header()}<main><section class="article-hero section"><p class="eyebrow">${article[0]} · ${article[1]}</p><h1>${article[2]}</h1><img src="${A(article[3])}" alt="${article[2]}" /></section><article class="article-body"><p>Good digital work usually begins with a better question. What does the audience need to understand, feel, or do next?</p><p>In this note, I look at the small choices that create a stronger experience: the balance between character and clarity, the rhythm of a page, and the details that help a visual system feel alive without getting in the way.</p><h2>Make room for the important thing.</h2><p>When every element is competing for attention, nothing feels intentional. A considered hierarchy lets the right message arrive first and gives everything else a useful place to support it.</p>${button('/contact-us', 'Talk about a project', 'dark-button')}</article></main>${footer()}<div class="toast"></div></div>`; }
+function contactPage() { return `<div class="site-shell inner-page">${header()}<main>${pageIntro('Contact', 'Tell me what you are trying to make clearer.', 'Share a little about the idea, the challenge, or the next version of your brand. I’ll get back to you on WhatsApp.') }<section class="section contact-grid"><div class="contact-card"><span class="contact-label">WhatsApp</span><h2>0597896078</h2><p>For project enquiries, collaborations, or a quick hello.</p><a class="dark-button pill-button" href="${whatsappHref}" target="_blank" rel="noreferrer">Chat on WhatsApp <span>${icons.arrow}</span></a></div><form class="contact-form" data-contact-form><label>Name<input name="name" required placeholder="Your name" /></label><label>Email<input name="email" type="email" required placeholder="you@example.com" /></label><label>What are you working on?<textarea name="message" required rows="5" placeholder="A few lines about your project"></textarea></label><button class="dark-button pill-button" type="submit">Send message <span>${icons.arrow}</span></button><p class="form-message" aria-live="polite"></p></form></section></main>${footer()}<div class="toast"></div></div>`; }
+function render() { const path = window.location.pathname; const match = path.match(/^\/blog\/([^/]+)/); if (match) return articlePage(match[1]); if (path === '/all' || path.startsWith('/all?') || path === '/work') return workPage(); if (path === '/about-us') return aboutPage(); if (path === '/blog') return blogPage(); if (path === '/contact-us') return contactPage(); return homePage(); }
+function mount() { document.querySelector('#app').innerHTML = render(); window.scrollTo({ top: 0, behavior: 'instant' }); }
 
-function benefits() {
-  const items = [
-    ['headset', 'Here to help', 'Get help whenever you need.'],
-    ['shield', '10-Days Return Policy', 'Full refund if not satisfied.'],
-    ['truck', 'Free Shipping', 'No hidden fees, free delivery.'],
-    ['shield', 'Secure Payment', 'Your finances stay secure.'],
-  ];
-  return `<section class="benefits section">${items.map(([kind,title,copy]) => `<div class="benefit"><div class="benefit-icon">${icons[kind]}</div><div><h3>${title}</h3><p>${copy}</p></div></div>`).join('')}</section>`;
-}
-
-function featureStrip() {
-  const items = [
-    ['Hear every detail in your favorite game like never before', 'headset'],
-    ['Every detail looks incredibly sharp and vivid', 'spark'],
-    ['Simple setup and controls, no complicated instructions needed', 'play'],
-    ['Wireless streaming from any device easily', 'bag'],
-  ];
-  return `<section class="feature-strip section">${items.map(([copy, kind]) => `<div class="feature-item"><div class="feature-icon">${icons[kind]}</div><p>${copy}</p></div>`).join('')}</section>`;
-}
-
-function categoriesSection() {
-  return `<section class="section categories-section"><div class="section-heading-row"><h2>SHOP BY CATEGORIES</h2><div class="rail-controls">${iconButton('prev', 'Previous')} ${iconButton('next', 'Next')}</div></div><div class="category-rail">${categories.map(([label,image,slug,alt]) => `<a class="category-card" href="/${slug}" data-route><span class="category-image"><img src="${A(image)}" alt="Image of a ${alt}" /></span><span>${label}</span></a>`).join('')}</div></section>`;
-}
-
-function promo() {
-  return `<section class="promo section">
-    <div class="promo-copy"><p class="eyebrow">Weekend Offer</p><h2>20% OFF</h2><p class="promo-text">Get a Premium sound that stays with you through every run and workout</p><a class="light-button" href="/all" data-route>Shop Sale <span>${icons.arrow}</span></a></div>
-    <div class="promo-art"><div class="promo-circle"></div><img src="${A('M6eLWg07ufGoE9HVlS3Sh8y6wBQ')}" alt="Colorful wireless headphones" /></div>
-  </section>`;
-}
-
-function reviews() {
-  const people = [
-    ['Mark Johnson', 'Ordered headphones on Monday, arrived Wednesday. Quality products, fair prices, and excellent customer service throughout.', 'vRV0SewxhVXANq9cpM5NmXPfMw'],
-    ['Emily Davis', 'Easy website, secure checkout, and my TV arrived perfectly packaged. Will definitely shop here again!', '1BsatJIb1Ivwhy7t1MO2GCK8fU'],
-  ];
-  return `<section class="section reviews"><div class="section-heading-row"><h2>CUSTOMERS REVIEWS</h2><div class="rail-controls">${iconButton('prev', 'Previous')} ${iconButton('next', 'Next')}</div></div><div class="review-grid">${people.map(([name,copy,image]) => `<article class="review-card"><img src="${A(image)}" alt="${name}" /><div class="review-copy"><div class="stars">★★★★★</div><h3>${name}</h3><p>${copy}</p></div></article>`).join('')}</div></section>`;
-}
-
-function news() {
-  return `<section class="section news"><div class="section-heading-row"><h2>ARTICLES &amp; NEWS</h2><a class="view-all" href="/blog" data-route>View all Articles <span>${icons.arrow}</span></a></div><div class="news-grid">${articles.map(([tag,date,title,image,slug]) => `<a class="news-card" href="/blog/${slug}" data-route><img src="${A(image)}" alt="${title}" /><div class="news-meta"><span>${tag}</span><span>${date}</span></div><h3>${title}</h3><span class="news-arrow">${icons.arrow}</span></a>`).join('')}</div></section>`;
-}
-
-function footer() {
-  return `<footer class="footer"><div class="footer-top"><div class="newsletter"><h2>Stay in the loop, with exclusive offers and product previews.</h2><form data-newsletter><input type="email" aria-label="Email address" placeholder="Email address" required /><button type="submit">Subscribe ${icons.arrow}</button></form><p class="form-message" aria-live="polite"></p></div><div class="footer-mark">${logo()}<p>Premium sound. Remarkable picture. Everyday listening, made better.</p></div></div><div class="footer-links"><div><p class="footer-label">Pages</p>${routeLink('/blog','Blog')} ${routeLink('/all','Shop')} ${routeLink('/about-us','About')}</div><div><p class="footer-label">Information</p>${routeLink('/search','Search')} ${routeLink('/all/favourites','Favourite')} ${routeLink('/contact-us','Contact us')}</div><div><p class="footer-label">Legal</p>${routeLink('/legal/privacy-policy','Privacy Policy')} ${routeLink('/legal/terms','Terms of use')}</div></div><div class="footer-bottom"><span>© 2026 HiFiShop</span><span>Made for people who listen closely.</span></div></footer>`;
-}
-
-function page() {
-  return `<div class="site-shell">${hero()}<main>${productRail('BEST SELLERS', bestSellers)}${benefits()}${featureStrip()}${categoriesSection()}${productRail('NEW ARRIVALS', newArrivals, 'new-arrivals')}${promo()}${reviews()}${news()}</main>${footer()}<div class="toast" role="status" aria-live="polite"></div></div>`;
-}
-
-function setupInteractions() {
-  document.addEventListener('click', (event) => {
-    const route = event.target.closest('[data-route]');
-    if (route) {
-      const href = route.getAttribute('href');
-      if (href && href.startsWith('/')) {
-        event.preventDefault();
-        history.pushState({}, '', href);
-        const toast = document.querySelector('.toast');
-        if (href !== '/') {
-          toast.textContent = 'This local route is ready for the mirrored storefront.';
-          toast.classList.add('is-visible');
-          clearTimeout(window.__toastTimer);
-          window.__toastTimer = setTimeout(() => toast.classList.remove('is-visible'), 2400);
-        } else window.scrollTo({ top: 0, behavior: 'smooth' });
-      }
-    }
-    const action = event.target.closest('[data-action]')?.dataset.action;
-    if (!action) return;
-    if (action === 'next' || action === 'prev') {
-      const scope = event.target.closest('.section');
-      const rail = scope?.querySelector('.product-rail, .category-rail');
-      if (rail) rail.scrollBy({ left: action === 'next' ? rail.clientWidth * .82 : -rail.clientWidth * .82, behavior: 'smooth' });
-    }
-    if (action === 'menu') document.querySelector('.mobile-header')?.classList.toggle('menu-open');
-    if (action === 'search') {
-      const toast = document.querySelector('.toast');
-      toast.textContent = 'Search is available from the local storefront route.';
-      toast.classList.add('is-visible');
-      clearTimeout(window.__toastTimer);
-      window.__toastTimer = setTimeout(() => toast.classList.remove('is-visible'), 2400);
-    }
-  });
-  document.querySelector('[data-newsletter]')?.addEventListener('submit', (event) => {
-    event.preventDefault();
-    const form = event.currentTarget;
-    const message = form.parentElement.querySelector('.form-message');
-    message.textContent = 'Thank you — you are on the list.';
-    form.reset();
-  });
-}
-
-document.querySelector('#app').innerHTML = page();
-setupInteractions();
-window.addEventListener('popstate', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+document.addEventListener('click', (event) => { const route = event.target.closest('[data-route]'); if (route) { const href = route.getAttribute('href'); if (href?.startsWith('/')) { event.preventDefault(); history.pushState({}, '', href); mount(); } } const action = event.target.closest('[data-action]')?.dataset.action; if (action === 'menu') document.querySelector('.mobile-header')?.classList.toggle('menu-open'); if (action === 'next' || action === 'prev') { const rail = event.target.closest('.section')?.querySelector('.project-rail, .category-rail'); rail?.scrollBy({ left: action === 'next' ? rail.clientWidth * .82 : -rail.clientWidth * .82, behavior: 'smooth' }); } });
+document.addEventListener('submit', (event) => { if (event.target.matches('[data-contact-form]')) { event.preventDefault(); const message = event.target.querySelector('.form-message'); message.textContent = 'Thanks — your message is ready to continue on WhatsApp.'; event.target.reset(); } });
+window.addEventListener('popstate', mount);
+mount();
