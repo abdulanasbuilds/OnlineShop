@@ -3,7 +3,7 @@ import './style.css';
 const jpgAssets = new Set(['vRV0SewxhVXANq9cpM5NmXPfMw', '1BsatJIb1Ivwhy7t1MO2GCK8fU', 'n9JVaN8wvTBRqoH40RycXvJSvRk', '6kXIlbPlvRIEf1KpAg5jqY0yC8o']);
 const A = (name) => `/assets/${name}${jpgAssets.has(name) ? '.jpg.png' : '.png.png'}`;
 const whatsappHref = 'https://wa.me/966597896078';
-const heroImage = '/assets/aagAQW4I6LzfnzIXSpVuhlRbDWw.jpg.png';
+const phoneHero = '/manus-storage/async-images/II5NpGcIMQP3zRBRTtjKrp/image-1.webp';
 
 const projects = [
   ['VisionMax 65" 4K OLED', 'Nk7j04TyuwZCKOQ4pmtcrpjmy2E', 'tVUfEhL2zsjwPINWqdjSmThvjc', 'Product showcase'],
@@ -51,7 +51,7 @@ function header() { return `<header class="site-header"><div class="header-links
 function button(href, text, className = '') { return `<a class="${className} pill-button" href="${href}" data-route>${text}<span>${icons.arrow}</span></a>`; }
 
 function hero() {
-  return `<section class="hero-section"><div class="hero-art"><img src="${heroImage}" alt="Headphones and audio visual direction" /><div class="hero-cover-top"></div><div class="hero-cover-copy"></div><div class="hero-cover-card"></div><div class="hero-overlay-nav">${header()}</div><div class="hero-copy"><p class="eyebrow">Independent digital designer</p><h1>Coded by<br />Abdul Anas</h1><p>Thoughtful websites, visual systems, and digital experiences for brands that want to be remembered.</p>${button('/all', 'View selected work', 'dark-button')}</div><div class="hero-side-card"><p>Designing with clarity, rhythm, and character.</p>${button('/about-us', 'About the work', 'light-button')}</div></div></section>`;
+  return `<section class="hero-section"><div class="hero-shell">${header()}</div><div class="hero-stage"><div class="hero-copy"><p class="eyebrow">Coded by Abdul Anas · 2026</p><h1>Ideas, made visible.</h1><p>Thoughtful websites, visual systems, and digital experiences for brands that want to be remembered.</p><div class="hero-links">${button('/all', 'Explore the work', 'dark-button')} ${button('/about-us', 'About Abdul Anas', 'text-button')}</div></div><div class="hero-phone-wrap"><div class="hero-glow"></div><img class="hero-phone" src="${phoneHero}" alt="Unbranded modern smartphone product render" /></div><div class="hero-caption"><span>Selected work</span><span>Scroll to explore <b>↓</b></span></div></div></section>`;
 }
 
 function projectCard([name, image, hover, type]) { return `<article class="project-card"><a href="/all" data-route class="project-image-wrap"><img class="project-image primary" src="${A(image)}" alt="${name}" /><img class="project-image secondary" src="${A(hover)}" alt="" aria-hidden="true" /><span class="project-arrow">${icons.arrow}</span></a><a href="/all" data-route class="project-name">${name}</a><span class="project-type">${type}</span></article>`; }

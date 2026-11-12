@@ -234,3 +234,59 @@ svg{width:100%;height:100%;fill:none;stroke:currentColor;stroke-width:1.55;strok
 
 .hero-cover-card{top:16%;height:67%}
 @media (max-width:680px){.hero-cover-card{top:17%;height:67%}}
+
+/* Apple-inspired product hero: normal flow, no layered source artwork, no breakpoint collisions. */
+.hero-section{background:#f5f5f7;color:#111}
+.hero-shell{background:#fff;border-bottom:1px solid #e8e8e8}
+.hero-shell .site-header{position:relative;background:#fff}
+.hero-stage{position:relative;display:grid;grid-template-columns:minmax(0,1fr) minmax(380px,.95fr);min-height:690px;max-width:1500px;margin:0 auto;padding:86px var(--pad) 48px;overflow:hidden;background:#f5f5f7}
+.hero-stage .hero-copy{position:relative;z-index:3;left:auto;bottom:auto;align-self:center;max-width:550px;padding-bottom:56px}
+.hero-stage .hero-copy .eyebrow{margin:0 0 24px;color:#6e6e73;font:600 13px var(--poppins);letter-spacing:.06em;text-transform:uppercase}
+.hero-stage .hero-copy h1{margin:0;max-width:650px;font:600 clamp(64px,7.5vw,112px)/.91 var(--general);letter-spacing:-.075em;color:#111}
+.hero-stage .hero-copy>p:not(.eyebrow){max-width:440px;margin:28px 0 30px;color:#6e6e73;font:400 18px/1.55 var(--poppins)}
+.hero-links{display:flex;flex-wrap:wrap;align-items:center;gap:18px}
+.text-button{padding:14px 4px;color:#111;background:transparent;border-radius:0;text-decoration:underline;text-underline-offset:5px}
+.text-button:hover{background:transparent;transform:none}
+.hero-phone-wrap{position:relative;display:grid;place-items:center;min-height:540px;align-self:stretch}
+.hero-glow{position:absolute;width:min(42vw,570px);aspect-ratio:1;border-radius:50%;background:radial-gradient(circle,#dfe7f9 0%,#e9edf7 45%,rgba(245,245,247,0) 72%);filter:blur(2px)}
+.hero-phone{position:relative;z-index:1;width:min(330px,72%);max-height:580px;object-fit:contain;filter:drop-shadow(0 30px 24px rgba(32,45,74,.18));transform:rotate(7deg) translateY(8px);transition:transform .45s ease}
+.hero-phone:hover{transform:rotate(4deg) translateY(-5px)}
+.hero-caption{position:absolute;right:var(--pad);bottom:32px;left:var(--pad);z-index:2;display:flex;justify-content:space-between;gap:20px;color:#6e6e73;font:500 12px var(--poppins);letter-spacing:.03em;text-transform:uppercase}
+.hero-caption b{font-size:16px;color:#111}
+@media (max-width:1050px){
+ .hero-stage{grid-template-columns:minmax(0,1.05fr) minmax(300px,.95fr);min-height:600px;padding-top:70px}
+ .hero-stage .hero-copy h1{font-size:clamp(58px,8vw,86px)}
+ .hero-stage .hero-copy>p:not(.eyebrow){font-size:16px}
+ .hero-phone-wrap{min-height:430px}.hero-phone{width:min(270px,76%)}
+ .site-header{padding:18px var(--pad)}.header-links{gap:18px}.header-link{font-size:13px}.header-contact{gap:10px;font-size:11px}.logo{font-size:18px}
+}
+@media (max-width:820px){
+ .hero-shell .site-header{display:none}.hero-shell .mobile-header{position:relative;display:flex}
+ .hero-stage{grid-template-columns:1fr;min-height:690px;padding:62px var(--pad) 42px;text-align:center}
+ .hero-stage .hero-copy{max-width:650px;margin:0 auto;padding-bottom:0;align-self:start}
+ .hero-stage .hero-copy h1{font-size:clamp(56px,10vw,82px)}
+ .hero-stage .hero-copy>p:not(.eyebrow){margin:22px auto 24px}
+ .hero-links{justify-content:center}
+ .hero-phone-wrap{min-height:330px;margin-top:-20px}
+ .hero-glow{width:min(70vw,480px)}
+ .hero-phone{width:min(220px,46vw);max-height:350px}
+ .hero-caption{right:var(--pad);bottom:22px;left:var(--pad)}
+}
+@media (max-width:680px){
+ .hero-shell .mobile-header{height:60px;padding:0 var(--pad)}
+ .hero-stage{min-height:650px;padding-top:54px}
+ .hero-stage .hero-copy .eyebrow{font-size:11px;margin-bottom:16px}
+ .hero-stage .hero-copy h1{font-size:58px;line-height:.94}
+ .hero-stage .hero-copy>p:not(.eyebrow){font-size:15px;line-height:1.45}
+ .hero-phone-wrap{min-height:285px;margin-top:-10px}
+ .hero-phone{width:min(185px,51vw)}
+ .hero-caption{font-size:10px}
+}
+
+/* Tablet navigation correction: keep the menu control bounded and consistent across all routes. */
+.menu-button{display:grid;place-items:center;width:32px;height:32px;flex:0 0 32px;padding:0;border:0;background:transparent}
+.menu-button svg{width:24px;height:24px;display:block}
+@media (max-width:820px){
+ .inner-page>.site-header{display:none}
+ .inner-page>.mobile-header{position:relative;display:flex}
+}
