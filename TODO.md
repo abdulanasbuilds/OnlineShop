@@ -1,17 +1,18 @@
 # TODO
 
-- [x] Convert the site into a multi-page showcase rather than an online store.
-  - Home, Selected Work, About, Blog, Article, and Contact views are available through internal routes.
-  - Commerce language, cart/favourite/profile behavior, buying actions, store labels, and online-store framing were removed.
+- [x] Keep the site as a multi-page online shop for audio, video, smart devices, and accessories.
+  - Home, Shop/All Products, About HiFi Store, Buying Guide & Journal, Article, and Customer Care views are available through internal routes.
+  - Product names, categories, product-focused descriptions, shop calls to action, buying guides, customer messages, and product-advice contact copy are included throughout the site.
+  - The site intentionally does not implement cart, checkout, account, or other full e-commerce functionality.
 
-- [x] Apply the requested personal branding.
-  - The visible name/brand is “Coded by Abdul Anas”.
+- [x] Keep Abdul Anas as the builder identity rather than changing the site into a portfolio.
+  - The visible builder identity is “Coded by Abdul Anas”.
   - The footer includes “Built by Abdul Anas” and “Coded by Abdul Anas”.
-  - The footer and Contact page include WhatsApp contact 0597896078.
+  - The footer and Customer Care page include WhatsApp contact 0597896078.
 
-- [x] Preserve a polished responsive presentation.
-  - The site keeps the supplied visual direction, local imagery, local fonts, responsive layouts, internal navigation, project rails, article cards, and mobile menu.
-  - The site is self-contained at runtime except for the explicitly requested WhatsApp contact action.
+- [x] Preserve responsive presentation and the corrected product hero.
+  - The hero presents a modern smartphone product and shop messaging at desktop, tablet, and mobile sizes without overlap.
+  - Product rails, category browsing, buying-guide cards, customer notes, and mobile navigation remain responsive.
 
 - [x] Push the project to the requested GitHub repository.
   - Remote: https://github.com/abdulanasbuilds/OnlineShop.git
